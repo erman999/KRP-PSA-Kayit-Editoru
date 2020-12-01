@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="style.css">
+
+  <title>PSA Kayıt Editorü</title>
+</head>
+<body>
+
+  <header>
+    PSA Kayıt Editorü
+  </header>
+
+  <main>
+
+    <section>
+      <div id="holder" class="bg-content">Dosyayı Buraya Sürükle </div>
+    </section>
+
+    <section class="second-section">
+      <button id="btn_start" type="button" class="btn btn-green"> Başlat </button>
+      <button id="btn_reset" type="button" class="btn btn-yellow"> Reset </button>
+    </section>
+
+  </main>
+
+  <div class="target-info">
+    <table>
+      <tr>
+        <th class="fit-row">Dosya:</th>
+        <td id="filename" class="expand-row"></td>
+      </tr>
+      <tr>
+        <th class="fit-row">Tür:</th>
+        <td id="type" class="expand-row"></td>
+      </tr>
+      <tr>
+        <th class="fit-row">Adres:</th>
+        <td id="filepath" class="expand-row"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="progress-info">
+    <small id="events">Durum</small>
+
+    <div class="progress">
+      <div id="progress_bar">0%</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="author">
+      <div class="f-left">Kaynak Kodu: <span id="srcLink">GitHub.com/erman999</span></div>
+      <div class="f-right">
+        <i>Erman İlçin</i>
+      </div>
+      <div class="clear-float"></div>
+    </div>
+  </footer>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./preload.js"></script>
+</body>
+</html>

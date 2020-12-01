@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F9F9;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 0;
+  overflow:auto;
+}
+
+section {
+  max-height:100%;
+  overflow: auto;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+
+}
+
+header, footer {
+  background-color: #363945;
+  color: white;
+}
+
+header {
+  padding: 14px 20px;
+  font-size: 22px;
+}
+
+.author {
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  box-shadow: 2px 2px 4px #888888;
+}
+
+.second-section {
+  padding-top: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: #FFF;
+}
+
+.btn-green:active {
+  background-color: #25963F;
+  box-shadow: 2px 2px 4px #888888;
+}
+
+.btn-yellow {
+  background-color: #FFC300;
+  color: #28260b;
+}
+
+.btn-yellow:active {
+  background-color: #DCA800;
+  box-shadow: 2px 2px 4px #888888;
+}
+
+#holder {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 3px dashed #363945;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: #363945;
+  background-color: #FFFEAA;
+  background-image: url("img/box-arrow-in-down-left.svg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 50%; /* Resize the background image to cover the entire container */
+}
+
+#holder.hover {
+  border-color: #28a745;
+  background-color: rgba(40, 167, 69, 0.3);
+}
+
+.target-info {
+  text-align: left;
+  font-size: 14px;
+  padding: 5px 30px 30px 30px;
+  border-bottom: 1px solid #363945;
+}
+
+.progress-info {
+  margin: 10px 10px 15px 10px;
+  padding: 10px;
+}
+
+.progress {
+  padding: 2px;
+  margin-top: 5px;
+  background-color: inherit;
+  border: 1px solid #363945;
+  border-radius: 3px;
+}
+
+.fit-row {
+  width: 1%;
+}
+
+.expand-row {
+  width: 100%;
+  word-break: break-all;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+tr {
+  border-bottom: 1px dashed #363945;
+}
+
+
+#progress_bar {
+  background-color: #28a745;
+  line-height: 30px;
+  width: 0%;
+  text-align: center;
+  color: #F8F9F9;
+}
+
+.input-text {
+  font-size: 12px;
+  border: 0px;
+  background-color: red;
+  width: 100%;
+  outline: none;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.clear-float {
+  clear: both;
+}
+
+#srcLink {
+  color: #FFFF68;
+  text-decoration: underline;
+}
